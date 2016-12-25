@@ -14,6 +14,7 @@ private:
     string lastName;
     
     // only relevant for females / wives
+    // to save maiden name in case of a divorce
     string maidenName;
     
     int age;
@@ -25,27 +26,33 @@ public:
     
     void inputPerson();
     
+    
     void setFirstName();
     
     void setLastName();
     
+    void setAge();
+    
+    void setGender();
+    
+    
     void setWifeLastNameToHusbands(const Person &husband);
+    
+    
+    void printPerson();
     
     void printFirstName();
     
     void printLastName();
     
-    void setAge();
+    void printAge();
+    
+    void printGender();
+    
     
     int getAge();
     
-    void printAge();
-    
-    void setGender();
-    
     int getGender();
-    
-    void printGender();
 };
 
 #endif /* Person_hpp */

@@ -22,6 +22,10 @@ public:
     
     void addWife(const Person &wife);
     
+    void printMarriedCouple();
+    
+    void divorce();
+    
 };
 
 #endif /* Marriage_hpp */

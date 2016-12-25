@@ -1,3 +1,5 @@
+// Driver file to test both classes
+
 #include <iostream>
 
 #include "Marriage.hpp"
@@ -5,20 +7,20 @@
 
 int main()
 {
-    Person husband, wife;
+    Person man, woman;
     Marriage marriage;
     
-    cout << "Input husband's details.\n";
-    cout << "------------------------\n";
+    cout << "Input man's details.\n";
+    cout << "--------------------\n";
     
-    husband.inputPerson();
+    man.inputPerson();
     
-    cout << "\nInput wife's details.\n";
-    cout <<   "---------------------\n";
+    cout << "\nInput woman's details.\n";
+    cout <<   "----------------------\n";
     
-    wife.inputPerson();
+    woman.inputPerson();
     
-    marriage.marryCouple(husband, wife);
+    marriage.marryCouple(man, woman);
     
-    cout << "stop";
+    marriage.printMarriedCouple();
 }

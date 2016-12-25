@@ -6,7 +6,10 @@
 //  Copyright © 2016 Joseph Lyons. All rights reserved.
 //
 
+#include <iostream>
 #include "Marriage.hpp"
+
+using namespace std;
 
 // constructor
 Marriage::Marriage()
@@ -40,7 +43,17 @@ void Marriage::addWife(const Person &wife)
     marriageVector[vectorPosition++].push_back(wife);
 }
 
+void Marriage::printMarriedCouple()
+{
+    marriageVector[0][0].printPerson();
+    marriageVector[0][1].printPerson();
+}
 
+void Marriage::divorce()
+{
+    // set wifes last name back to maiden
+    //marriageVector[0][1].set
+}
 
 
 
