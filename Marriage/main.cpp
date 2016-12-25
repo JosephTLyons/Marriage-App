@@ -1,15 +1,24 @@
-//
-//  main.cpp
-//  Marriage
-//
-//  Created by Joseph Lyons on 12/24/16.
-//  Copyright © 2016 Joseph Lyons. All rights reserved.
-//
-
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include "Marriage.hpp"
+#include "Person.hpp"
+
+int main()
+{
+    Person husband, wife;
+    Marriage marriage;
+    
+    cout << "Input husband's details.\n";
+    cout << "------------------------\n";
+    
+    husband.inputPerson();
+    
+    cout << "\nInput wife's details.\n";
+    cout <<   "---------------------\n";
+    
+    wife.inputPerson();
+    
+    marriage.marryCouple(husband, wife);
+    
+    cout << "stop";
 }
