@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		996BC5B41E0E8C5E00C1DCB1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 996BC5B31E0E8C5E00C1DCB1 /* main.cpp */; };
 		996BC5BC1E0E8C8300C1DCB1 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 996BC5BA1E0E8C8300C1DCB1 /* Person.cpp */; };
-		996BC5BF1E0F300F00C1DCB1 /* Marriage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 996BC5BD1E0F300F00C1DCB1 /* Marriage.cpp */; };
+		996BC5BF1E0F300F00C1DCB1 /* RelationshipStatus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 996BC5BD1E0F300F00C1DCB1 /* RelationshipStatus.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +29,8 @@
 		996BC5B31E0E8C5E00C1DCB1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		996BC5BA1E0E8C8300C1DCB1 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 		996BC5BB1E0E8C8300C1DCB1 /* Person.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
-		996BC5BD1E0F300F00C1DCB1 /* Marriage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Marriage.cpp; sourceTree = "<group>"; };
-		996BC5BE1E0F300F00C1DCB1 /* Marriage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Marriage.hpp; sourceTree = "<group>"; };
+		996BC5BD1E0F300F00C1DCB1 /* RelationshipStatus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RelationshipStatus.cpp; sourceTree = "<group>"; };
+		996BC5BE1E0F300F00C1DCB1 /* RelationshipStatus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RelationshipStatus.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 				996BC5B31E0E8C5E00C1DCB1 /* main.cpp */,
 				996BC5BB1E0E8C8300C1DCB1 /* Person.hpp */,
 				996BC5BA1E0E8C8300C1DCB1 /* Person.cpp */,
-				996BC5BE1E0F300F00C1DCB1 /* Marriage.hpp */,
-				996BC5BD1E0F300F00C1DCB1 /* Marriage.cpp */,
+				996BC5BE1E0F300F00C1DCB1 /* RelationshipStatus.hpp */,
+				996BC5BD1E0F300F00C1DCB1 /* RelationshipStatus.cpp */,
 			);
 			path = Marriage;
 			sourceTree = "<group>";
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				996BC5B41E0E8C5E00C1DCB1 /* main.cpp in Sources */,
-				996BC5BF1E0F300F00C1DCB1 /* Marriage.cpp in Sources */,
+				996BC5BF1E0F300F00C1DCB1 /* RelationshipStatus.cpp in Sources */,
 				996BC5BC1E0E8C8300C1DCB1 /* Person.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

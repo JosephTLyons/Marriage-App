@@ -20,6 +20,9 @@ private:
     int age;
     char gender;
     
+    // integer used to find the contact in the vector
+    unsigned long int vectorAccessor;
+    
 public:
     
     Person();
@@ -35,8 +38,12 @@ public:
     
     void setGender();
     
+    void setVectorAccessor(unsigned long int &number);
+    
     
     void setWifeLastNameToHusbands(const Person &husband);
+    
+    void setWifeLastNameBackToMaiden();
     
     
     void printPerson();
@@ -53,6 +60,8 @@ public:
     int getAge();
     
     int getGender();
+    
+    unsigned long int getVectorAccessor();
 };
 
 #endif /* Person_hpp */

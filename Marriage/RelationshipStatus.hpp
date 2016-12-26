@@ -5,27 +5,27 @@
 #include "Person.hpp"
 
 
-class Marriage
+class RelationshipStatus
 {
 private:
     vector< vector<Person> > marriageVector;
+    vector<Person> singleVector;
     
     int vectorPosition;
-    
-public:
-    
-    Marriage();
-
-    void marryCouple(const Person &husband, Person &wife);
     
     void addHusband(const Person &husband);
     
     void addWife(const Person &wife);
     
+public:
+    
+    RelationshipStatus();
+
+    void marryCouple(Person &husband, Person &wife);
+    
     void printMarriedCouple();
     
     void divorce();
-    
 };
 
 #endif /* Marriage_hpp */

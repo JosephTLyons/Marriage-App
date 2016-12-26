@@ -1,25 +1,26 @@
 //
-//  Marriage.cpp
-//  Marriage
+//  RelationshipStatus.cpp
+//  RelationshipStatus
 //
 //  Created by Joseph Lyons on 12/24/16.
 //  Copyright © 2016 Joseph Lyons. All rights reserved.
 //
 
 #include <iostream>
-#include "Marriage.hpp"
+#include "RelationshipStatus.hpp"
 
 using namespace std;
 
 // constructor
-Marriage::Marriage()
+RelationshipStatus::RelationshipStatus()
 {
     vectorPosition = 0;
 }
 
-void Marriage::marryCouple(const Person &husband, Person &wife)
+void RelationshipStatus::marryCouple(Person &husband, Person &wife)
 {
     vector<Person> temporary;
+    unsigned long int tempVectorAccessorHolder = 0;
     
     // change wife's last name
     wife.setWifeLastNameToHusbands(husband);
@@ -28,31 +29,35 @@ void Marriage::marryCouple(const Person &husband, Person &wife)
     temporary.push_back(wife);
     
     marriageVector.push_back(temporary);
+    
+    
+    tempVectorAccessorHolder = marriageVector.size() - 1;
+    
+    husband.setVectorAccessor(tempVectorAccessorHolder);
 }
 
-void Marriage::addHusband(const Person &husband)
+void RelationshipStatus::addHusband(const Person &husband)
 {
     // Add husband to subvector of vector position
     marriageVector[vectorPosition].push_back(husband);
 }
 
-void Marriage::addWife(const Person &wife)
+void RelationshipStatus::addWife(const Person &wife)
 {
     // Add husband to subvector of vector position and increment
     // Position to next spot
     marriageVector[vectorPosition++].push_back(wife);
 }
 
-void Marriage::printMarriedCouple()
+void RelationshipStatus::printMarriedCouple()
 {
     marriageVector[0][0].printPerson();
     marriageVector[0][1].printPerson();
 }
 
-void Marriage::divorce()
+void RelationshipStatus::divorce()
 {
-    // set wifes last name back to maiden
-    //marriageVector[0][1].set
+    marriageVector[0][1].setWifeLastNameBackToMaiden();
 }
 
 

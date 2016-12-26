@@ -2,13 +2,13 @@
 
 #include <iostream>
 
-#include "Marriage.hpp"
+#include "RelationshipStatus.hpp"
 #include "Person.hpp"
 
 int main()
 {
-    Person man, woman;
-    Marriage marriage;
+    Person man, woman, man2, woman2;
+    RelationshipStatus relationshipStatus;
     
     cout << "Input man's details.\n";
     cout << "--------------------\n";
@@ -20,7 +20,23 @@ int main()
     
     woman.inputPerson();
     
-    marriage.marryCouple(man, woman);
+    relationshipStatus.marryCouple(man, woman);
     
-    marriage.printMarriedCouple();
+    
+    
+    
+    
+    cout << "Input man's details.\n";
+    cout << "--------------------\n";
+    
+    man2.inputPerson();
+    
+    cout << "\nInput woman's details.\n";
+    cout <<   "----------------------\n";
+    
+    woman2.inputPerson();
+    
+    relationshipStatus.marryCouple(man2, woman2);
+    
+    relationshipStatus.divorce();
 }

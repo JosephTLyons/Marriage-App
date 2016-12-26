@@ -7,6 +7,8 @@ Person::Person()
 {
     age    =  0;
     gender = '?';
+    
+    vectorAccessor = 0;
 }
 
 void Person::inputPerson()
@@ -48,9 +50,19 @@ void Person::setGender()
     // add code to restrict input to M or F
 }
 
+void Person::setVectorAccessor(unsigned long int &number)
+{
+    vectorAccessor = number;
+}
+
 void Person::setWifeLastNameToHusbands(const Person &husband)
 {
     lastName = husband.lastName;
+}
+
+void Person::setWifeLastNameBackToMaiden()
+{
+    lastName = maidenName;
 }
 
 void Person::printPerson()
@@ -100,4 +112,9 @@ int Person::getAge()
 int Person::getGender()
 {
     return gender;
+}
+
+unsigned long int Person::getVectorAccessor()
+{
+    return vectorAccessor;
 }
